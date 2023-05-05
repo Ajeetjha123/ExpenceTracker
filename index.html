@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expence Tarcker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha512-30abU43HjMqRYr3dn3dULcEwv2G1+Vh6JGHZu6eW/oZLRK81As7yaUqP2a6QVwSx9wO5b0jWka4YH9Xv0rTKNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js" integrity="sha512-9DJz4PPTFgP5jCJ4oEugWj2n4xsSW+P41CedgVCr+R7k9kK2V3ArMnsGmyhBfQQwLGsSM8V8zLQqOK6VZgakLg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+  <div class="container">
+    <form id="expence-form">
+      <label for="Expence" class="form-label">expenceamount:</label>
+      <input type="text" name="expenceamount" class="form-control" id="expenceamount">
+      <label for="description" class="form-label">description:</label>
+      <input type="text" name="description" class="form-control" id="description">
+      <label for="category" class="form-label">category:</label>
+      <select class="form-select" name="category" id="category">
+        <option value="movies">movies</option>
+        <option value="games">games</option>
+        <option value="magic">magic</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Add Expence</button>
+    </form>
+    <ul id="expence-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
